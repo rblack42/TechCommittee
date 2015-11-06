@@ -20,6 +20,15 @@ So far, the scripts access these data sets:
 
     * Class list by term
 
+I also use this tool to extract a list of registered students for each class I
+teach, and use the extracted data to set up my excel spreadsheet I use as a
+gradebook. All of this setup is automated. Further, I use a similar script to
+generate the syllabus I use for each course. An example of the output from this
+script is seen here:
+
+    * `COSC 2325-001 Syllabus
+      <http://www.co-pylit.org/classes/fall2015/cosc2325-001/syllabus/index.html#fall2015-cosc2325-001-syllabus>`_
+
 Scraping Strategy
 *****************
 
@@ -27,6 +36,49 @@ The process used at present involves downloading the web page and scraping that
 page using the local copy, rather than scraping the live site directly. This
 allows local testing, and makes sure the ACC server does not see high-speed
 spider activity which might trigger security measures.
+
+Installing Scrapy
+=================
+
+Assuming you are using virtualenv_ for Python development, this is how oyu get scraoy installed:
+
+..  code-block:: text
+
+    $ mkdir TechCommittee
+    $ cd TechCommittee
+    $ virtualenv _venv
+    $ source _venv/bin/activate
+    (_venv) $ pip install scrapy
+
+Scrapy_ provides a few scripts to set up a web scraping project:
+
+..  code-block:: text
+
+    $ scrapy startproject ACCspider
+
+This commands sets p a basic spider application with this structure:
+
+..  code-block:: text
+
+    ACCspider/
+        |
+        +- scrapy.cfg
+        |
+        +- ACCspider/
+            |
+            +- __init__.py
+            |
+            +- items.py
+            |
+            +- pipelines.py
+            |
+            +- settings.py
+            |
+            +- spiders/
+                |
+                +- __init__.py
+
+Next, edit the 
 
 Data URLs
 =========
