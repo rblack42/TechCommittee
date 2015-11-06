@@ -13,4 +13,8 @@ html:
 
 publish:
 	rsync -arvuz $(BUILD_DIR)/html/ rblack@www.co-pylit.org:html/TechCommittee/
+
+test:
+	nosetests --with-coverage --cover-package=ACCspider
+
 .PHONY:	all publish clean html
