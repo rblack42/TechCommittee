@@ -1,0 +1,6 @@
+et-xmlfile==1.0.1
+jdcal==1.0
+openpyxl==2.3.0
+wheel==0.24.0
+sphinx
+sphinx-rtd-theme

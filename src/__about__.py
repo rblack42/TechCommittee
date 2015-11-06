@@ -1,0 +1,7 @@
+__title__ = 'ACC Tech Committee'
+__summary__ = 'ACC Technology COmmittee web spider tool development'
+__url__ = 'https://github.com/rblack42/TechCommittee'
+__version__ = '0.1-dev'
+__author__ = 'Roie R. Black'
+__email__ = 'rblack@austincc.edu'
+__license__ = 'BSD 3-Clause'
