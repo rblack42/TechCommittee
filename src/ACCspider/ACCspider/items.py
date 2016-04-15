@@ -10,5 +10,9 @@ import scrapy
 
 class AccspiderItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    course = scrapy.Field()
+    synonym = scrapy.FIeld()
+    room = scrapy.Field()
+    days = scrapy.Field()
+    time = scrapy.Field()
+    instructor = scrapy.Field()
